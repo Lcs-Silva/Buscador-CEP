@@ -20,7 +20,7 @@ function App() {
       setCEP(response.data);
       setInput('');
     }catch{
-      alert("Something gone wrong :(");
+      alert("Algo deu errado =(");
       setInput('');
     }
   };
@@ -28,12 +28,12 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="title">CEP FINDER</h1>
+      <h1 className="title">Buscador de CEP</h1>
       
       <div className="containerInput">        
         <input
         type="text"
-        placeholder="Type your CEP here"
+        placeholder="Digite seu CEP aqui..."
         value={input}
         onChange={(event) => setInput(event.target.value)}
         />
